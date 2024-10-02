@@ -323,7 +323,7 @@
 <tbody>
 <tr>
 <td>持续改进移动操作与自主现实世界强化学习</td>
-<td>我们提出了一种完全自主的现实世界强化学习框架，用于移动操作，该框架能够在无需大量设备或人工监督的情况下学习策略。这一成果的实现得益于以下三点：1）任务相关自主性，它引导探索向物体互动方向发展，并防止在目标状态附近停滞；2）通过利用行为先验中的基本任务知识，实现高效策略学习；3）制定通用奖励，结合人类可理解的语义信息与低层次、细粒度的观察结果。我们展示了，我们的方法使Spot机器人能够在四项具有挑战性的移动操作任务中持续提升表现，平均成功率达到80%，比现有方法提高了3-4个百分点。相关视频可在https://continual-mobile-manip.github.io/查看。</td>
+<td>我们提出了一种完全自主的现实世界强化学习框架，用于移动操作，能够在无需大量仪器或人工监督的情况下学习策略。这一框架的实现得益于以下三点：1) 任务相关自主性，它引导探索朝向物体交互，并防止在目标状态附近停滞；2) 通过利用行为先验中的基本任务知识，实现高效策略学习；3) 制定结合人类可解释语义信息与低层次、细粒度观察的通用奖励。我们展示了该方法使Spot机器人能够在四个具有挑战性的移动操作任务中持续提升表现，平均成功率达到80%，相较于现有方法提升了3-4个百分点。相关视频可在https://continual-mobile-manip.github.io/查看。</td>
 <td>Russell Mendonca</td>
 <td><a href="http://arxiv.org/pdf/2409.20568v1">PDF</a></td>
 <td>N/A</td>
@@ -331,8 +331,8 @@
 <td>We present a fully autonomous real-world RL framework for mobile manipulation that can learn policies without extensive instrumentation or human supervision. This is enabled by 1) task-relevant autonomy, which guides exploration towards object interactions and prevents stagnation near goal states, 2) efficient policy learning by leveraging basic task knowledge in behavior priors, and 3) formulating generic rewards that combine human-interpretable semantic information with low-level, fine-grained observations. We demonstrate that our approach allows Spot robots to continually improve their performance on a set of four challenging mobile manipulation tasks, obtaining an average success rate of 80% across tasks, a 3-4 improvement over existing approaches. Videos can be found at https://continual-mobile-manip.github.io/</td>
 </tr>
 <tr>
-<td>MM1.5：多模态大语言模型微调中的方法、分析与见解</td>
-<td>我们介绍了MM1.5，这是一个新的多模态大型语言模型（MLLM）系列，旨在增强在文本丰富的图像理解、视觉指称和定位以及多图像推理方面的能力。基于MM1架构，MM1.5采用了以数据为中心的模型训练方法，系统地探索了在整个模型训练生命周期中多样数据混合的影响。这包括高质量的OCR数据和合成字幕用于持续预训练，以及优化的视觉指令调优数据混合用于监督微调。我们的模型参数规模从1B到30B不等，涵盖了密集模型和专家混合（MoE）变体，并展示了即使在较小规模（1B和3B）下，精心设计的数据筛选和训练策略也能带来强大的性能。此外，我们引入了两个专门的变体：MM1.5-Video，专为视频理解设计，以及MM1.5-UI，专为移动用户界面理解定制。通过广泛的实证研究和消融实验，我们提供了关于训练过程和决策的详细见解，这些见解构成了我们最终设计的基础，为未来在MLLM开发中的研究提供了宝贵的指导。</td>
+<td>MM1.5：多模态大语言模型微调中的方法、分析与洞察</td>
+<td>我们提出了MM1.5，这是一个新的多模态大型语言模型（MLLMs）家族，旨在增强在文本丰富的图像理解、视觉指称和定位以及多图像推理方面的能力。基于MM1架构，MM1.5采用了以数据为中心的模型训练方法，系统地探索了在整个模型训练生命周期中多样数据混合的影响。这包括高质量的OCR数据和用于持续预训练的合成字幕，以及为监督微调优化的视觉指令调优数据混合。我们的模型参数规模从1B到30B不等，涵盖了密集模型和专家混合（MoE）变体，并展示了即使在较小规模（1B和3B）下，精心设计的数据筛选和训练策略也能带来强大的性能。此外，我们引入了两个专门的变体：MM1.5-Video，专为视频理解设计，以及MM1.5-UI，专为移动UI理解定制。通过广泛的实证研究和消融实验，我们提供了关于训练过程和决策的详细见解，这些见解构成了我们最终设计的基础，为未来在MLLM开发中的研究提供了宝贵的指导。</td>
 <td>Haotian Zhang</td>
 <td><a href="http://arxiv.org/pdf/2409.20566v1">PDF</a></td>
 <td>N/A</td>
@@ -341,7 +341,7 @@
 </tr>
 <tr>
 <td>SpaceMesh：一种用于学习流形曲面网格的连续表示</td>
-<td>网格在视觉计算和模拟中无处不在，然而大多数现有的机器学习技术仅间接表示网格，例如作为标量场的水平集或模板的变形，或者作为缺乏局部结构的无序三角形汤。这项工作提出了一种方案，直接生成具有复杂连通性的流形多边形网格作为神经网络的输出。我们的关键创新在于在每个网格顶点定义一个连续的潜在连通性空间，这隐含了离散网格。特别是，我们的顶点嵌入在半边网格表示中生成循环邻居关系，这保证了边流形性，并能够表示一般的多边形网格。这种表示非常适合机器学习和随机优化，不受连通性或拓扑的限制。我们首先探索了这种表示的基本属性，然后使用它来拟合来自大型数据集的网格分布。生成的模型生成的网格具有从数据集群体中学习到的镶嵌结构，细节简洁，网格元素质量高。在应用中，这种方法不仅从生成模型中产生高质量的输出，还直接启用了学习诸如网格修复等具有挑战性的几何处理任务。</td>
+<td>网格在视觉计算和模拟中无处不在，然而大多数现有的机器学习技术仅间接表示网格，例如作为标量场的水平集或模板的变形，或作为缺乏局部结构的无序三角形汤。这项工作提出了一种方案，直接生成具有复杂连通性的流形多边形网格作为神经网络的输出。我们的关键创新在于在每个网格顶点定义一个连续的潜在连通性空间，这隐含了离散网格。特别是，我们的顶点嵌入在半边网格表示中生成循环邻居关系，这保证了边缘流形性并能够表示一般的多边形网格。这种表示非常适合机器学习和随机优化，不受连通性或拓扑的限制。我们首先探索了这种表示的基本属性，然后使用它来拟合来自大型数据集的网格分布。生成的模型生成的网格具有从数据集群体中学习到的镶嵌结构，细节简洁且网格元素质量高。在应用中，这种方法不仅从生成模型中产生高质量的输出，还直接实现了学习具有挑战性的几何处理任务，如网格修复。</td>
 <td>Tianchang Shen</td>
 <td><a href="http://arxiv.org/pdf/2409.20562v1">PDF</a></td>
 <td>N/A</td>
@@ -349,8 +349,8 @@
 <td>Meshes are ubiquitous in visual computing and simulation, yet most existing machine learning techniques represent meshes only indirectly, e.g. as the level set of a scalar field or deformation of a template, or as a disordered triangle soup lacking local structure. This work presents a scheme to directly generate manifold, polygonal meshes of complex connectivity as the output of a neural network. Our key innovation is to define a continuous latent connectivity space at each mesh vertex, which implies the discrete mesh. In particular, our vertex embeddings generate cyclic neighbor relationships in a halfedge mesh representation, which gives a guarantee of edge-manifoldness and the ability to represent general polygonal meshes. This representation is well-suited to machine learning and stochastic optimization, without restriction on connectivity or topology. We first explore the basic properties of this representation, then use it to fit distributions of meshes from large datasets. The resulting models generate diverse meshes with tessellation structure learned from the dataset population, with concise details and high-quality mesh elements. In applications, this approach not only yields high-quality outputs from generative models, but also enables directly learning challenging geometry processing tasks such as mesh repair.</td>
 </tr>
 <tr>
-<td>LaMMA-P：基于语言模型驱动的PDDL规划器的通用多智能体长期任务分配与规划</td>
-<td>语言模型（LMs）具备强大的自然语言理解能力，能够有效地将人类指令转化为简单机器人任务的详细计划。然而，处理长时间跨度的任务，特别是在协作异构机器人团队的子任务识别和分配方面，仍然是一个重大挑战。为了解决这一问题，我们提出了一种语言模型驱动的多智能体PDDL规划器（LaMMA-P），这是一个新颖的多智能体任务规划框架，在长时间跨度任务上实现了最先进的性能。LaMMA-P结合了LMs的推理能力和传统启发式搜索规划器的优势，实现了高成功率和效率，同时在任务间展现出强大的泛化能力。此外，我们创建了MAT-THOR，这是一个综合基准，基于AI2-THOR环境，包含两种不同复杂程度的家居任务。实验结果表明，LaMMA-P的成功率比现有的基于LM的多智能体规划器高出105%，效率高出36%。本工作的实验视频、代码、数据集以及各模块中使用的详细提示均可通过以下链接获取：https://lamma-p.github.io。</td>
+<td>LaMMA-P：基于语言模型驱动的PDDL规划器的可泛化多智能体长期任务分配与规划</td>
+<td>语言模型（LMs）具备强大的自然语言理解能力，能够有效地将人类指令转化为简单机器人任务的详细计划。然而，处理长时间任务，尤其是在协作异构机器人团队的子任务识别和分配方面，仍然是一个重大挑战。为了解决这一问题，我们提出了一种语言模型驱动的多智能体PDDL规划器（LaMMA-P），这是一种新颖的多智能体任务规划框架，在长时间任务上实现了最先进的性能。LaMMA-P结合了LMs的推理能力和传统启发式搜索规划器的优势，实现了高成功率和高效性，同时在任务间展现出强大的泛化能力。此外，我们创建了MAT-THOR，这是一个综合基准，基于AI2-THOR环境，包含了具有两种不同复杂程度的家居任务。实验结果表明，LaMMA-P的成功率比现有的基于LM的多智能体规划器高出105%，效率高出36%。本工作的实验视频、代码、数据集以及每个模块中使用的详细提示均可通过以下链接获取：https://lamma-p.github.io。</td>
 <td>Xiaopan Zhang</td>
 <td><a href="http://arxiv.org/pdf/2409.20560v1">PDF</a></td>
 <td>N/A</td>
@@ -359,7 +359,7 @@
 </tr>
 <tr>
 <td>监督多模态裂变学习</td>
-<td>从多模态数据集中学习可以利用互补信息，并在预测任务中提高性能。在高维数据集中考虑特征相关性的常用策略是潜在变量方法。已经提出了几种针对多模态数据集的潜在变量方法。然而，这些方法要么专注于提取所有模态之间的共享成分，要么同时提取共享成分和每个模态特有的个体成分。为了填补这一空白，我们提出了一种多模态分裂学习（Multi-Modal Fission Learning, MMFL）模型，该模型能够同时识别多模态数据集特征中潜在的全局联合、部分联合和个体成分。与现有的潜在变量方法不同，MMFL利用响应变量的监督来识别具有预测性的潜在成分，并且自然地扩展到包含不完整多模态数据的情况。通过模拟研究，我们证明了MMFL在完整和不完整模态设置下均优于各种现有的多模态算法。我们将MMFL应用于一个实际案例研究，使用来自阿尔茨海默病神经影像学倡议（Alzheimers Disease Neuroimaging Initiative, ADNI）数据集的多模态神经影像学和基因组数据，进行阿尔茨海默病的早期预测。与现有方法相比，MMFL提供了更准确的预测，并更好地洞察了模态内和模态间的相关性。</td>
+<td>从多模态数据集中学习可以利用互补信息，并提高预测任务的性能。在高维数据集中考虑特征相关性的常用策略是潜在变量方法。已经提出了几种用于多模态数据集的潜在变量方法。然而，这些方法要么专注于提取所有模态之间的共享成分，要么同时提取共享成分和每个模态特有的个体成分。为了填补这一空白，我们提出了一种多模态裂变学习（Multi-Modal Fission Learning, MMFL）模型，该模型同时识别多模态数据集特征中潜在的全局联合、部分联合和个体成分。与现有的潜在变量方法不同，MMFL利用响应变量的监督来识别具有预测性的潜在成分，并且自然地扩展以整合不完整的多模态数据。通过模拟研究，我们证明了MMFL在完整和不完整模态设置下均优于各种现有的多模态算法。我们将MMFL应用于一个真实世界的案例研究，使用来自阿尔茨海默病神经影像学倡议（Alzheimer's Disease Neuroimaging Initiative, ADNI）数据集的多模态神经影像和基因组数据，进行阿尔茨海默病的早期预测。与现有方法相比，MMFL提供了更准确的预测，并更好地洞察了模态内和模态间的相关性。</td>
 <td>Lingchao Mao</td>
 <td><a href="http://arxiv.org/pdf/2409.20559v1">PDF</a></td>
 <td>N/A</td>
@@ -367,8 +367,8 @@
 <td>Learning from multimodal datasets can leverage complementary information and improve performance in prediction tasks. A commonly used strategy to account for feature correlations in high-dimensional datasets is the latent variable approach. Several latent variable methods have been proposed for multimodal datasets. However, these methods either focus on extracting the shared component across all modalities or on extracting both a shared component and individual components specific to each modality. To address this gap, we propose a Multi-Modal Fission Learning (MMFL) model that simultaneously identifies globally joint, partially joint, and individual components underlying the features of multimodal datasets. Unlike existing latent variable methods, MMFL uses supervision from the response variable to identify predictive latent components and has a natural extension for incorporating incomplete multimodal data. Through simulation studies, we demonstrate that MMFL outperforms various existing multimodal algorithms in both complete and incomplete modality settings. We applied MMFL to a real-world case study for early prediction of Alzheimers Disease using multimodal neuroimaging and genomics data from the Alzheimers Disease Neuroimaging Initiative (ADNI) dataset. MMFL provided more accurate predictions and better insights into within- and across-modality correlations compared to existing methods.</td>
 </tr>
 <tr>
-<td>Maia-2：一个在象棋中实现人机对齐的统一模型</td>
-<td>越来越多的领域中，人工智能（AI）系统不仅超越了人类的能力，还能准确地模拟人类行为。这为在这些领域通过更具亲和力的AI伙伴和更深入的人类决策洞察，实现算法驱动的教学提供了可能。然而，要实现这一目标，关键在于连贯地模拟人类在不同技能水平上的行为。国际象棋是一个理想的研究模型系统，用于探索这种人机协同，因其作为AI研究关键试验场的丰富历史、成熟的超人类AI系统如AlphaZero，以及通过国际象棋评级系统对技能的精确衡量。先前在模拟国际象棋中人类决策的工作，使用完全独立的模型来捕捉不同技能水平上的人类风格，这意味着它们在适应人类进步的全谱方面缺乏连贯性，并最终作为AI伙伴和教学工具的效果有限。在这项工作中，我们提出了一种统一的人机协同建模方法，连贯地捕捉不同技能水平上的人类风格，并直接捕捉人们如何改进。鉴于人类学习的复杂非线性特性，我们引入了一种技能感知注意力机制，以动态地将玩家的优势与编码的棋局位置相结合，使我们的模型对玩家技能的变化敏感。我们的实验结果表明，这一统一框架显著增强了AI与人类玩家在广泛技能水平上的协同性，为深入洞察人类决策和AI引导的教学工具铺平了道路。</td>
+<td>Maia-2：一个在棋类游戏中实现人机对齐的统一模型</td>
+<td>越来越多的领域中，人工智能（AI）系统不仅超越了人类的能力，还能准确地模拟人类行为。这为在这些领域中通过更易理解的AI伙伴和更深入的人类决策洞察力实现算法驱动的教学提供了可能性。然而，要实现这一目标，关键在于连贯地模拟人类在不同技能水平上的行为。国际象棋是一个理想的研究系统，用于探索这种人机协同，因为它有着丰富的历史，是AI研究的关键试验场，拥有像AlphaZero这样成熟的超人类AI系统，并通过国际象棋评级系统提供了技能的精确测量。以往在模拟国际象棋中人类决策的工作使用完全独立的模型来捕捉不同技能水平上的人类风格，这意味着它们缺乏适应人类全面进步的能力连贯性，并最终在作为AI伙伴和教学工具的有效性上受到限制。在这项工作中，我们提出了一种统一的人机协同建模方法，该方法在国际象棋中连贯地捕捉不同技能水平上的人类风格，并直接捕捉人们如何改进。认识到人类学习的复杂非线性特性，我们引入了一种技能感知的注意力机制，以动态地将玩家的优势与编码的棋局位置整合，使我们的模型能够敏感地反映玩家技能的演变。我们的实验结果表明，这种统一的框架显著增强了AI与人类玩家在各种专业水平上的协同性，为深入洞察人类决策和AI引导的教学工具铺平了道路。</td>
 <td>Zhenwei Tang</td>
 <td><a href="http://arxiv.org/pdf/2409.20553v1">PDF</a></td>
 <td>N/A</td>
@@ -376,8 +376,8 @@
 <td>There are an increasing number of domains in which artificial intelligence (AI) systems both surpass human ability and accurately model human behavior. This introduces the possibility of algorithmically-informed teaching in these domains through more relatable AI partners and deeper insights into human decision-making. Critical to achieving this goal, however, is coherently modeling human behavior at various skill levels. Chess is an ideal model system for conducting research into this kind of human-AI alignment, with its rich history as a pivotal testbed for AI research, mature superhuman AI systems like AlphaZero, and precise measurements of skill via chess rating systems. Previous work in modeling human decision-making in chess uses completely independent models to capture human style at different skill levels, meaning they lack coherence in their ability to adapt to the full spectrum of human improvement and are ultimately limited in their effectiveness as AI partners and teaching tools. In this work, we propose a unified modeling approach for human-AI alignment in chess that coherently captures human style across different skill levels and directly captures how people improve. Recognizing the complex, non-linear nature of human learning, we introduce a skill-aware attention mechanism to dynamically integrate players' strengths with encoded chess positions, enabling our model to be sensitive to evolving player skill. Our experimental results demonstrate that this unified framework significantly enhances the alignment between AI and human players across a diverse range of expertise levels, paving the way for deeper insights into human decision-making and AI-guided teaching tools.</td>
 </tr>
 <tr>
-<td>LLM在实际代码生成中的幻觉：现象、机制与缓解</td>
-<td>代码生成旨在根据输入需求自动生成代码，显著提升开发效率。近期，基于大型语言模型（LLMs）的方法在代码生成任务中展现出令人鼓舞的成果，并彻底改变了这一领域。尽管性能表现出色，LLMs在生成内容时常常出现幻觉现象，特别是在实际开发过程中需要处理复杂上下文依赖关系的代码生成场景中。尽管先前的研究已分析了基于LLM的代码生成中的幻觉现象，但这些研究仅限于独立函数的生成。本文开展了一项实证研究，旨在探讨在更实际且复杂的开发环境中，特别是在仓库级生成场景下，LLM幻觉的现象、机制及其缓解措施。首先，我们手动检查了六大主流LLMs的代码生成结果，以建立LLM生成代码的幻觉分类体系。接着，我们详细阐述了幻觉现象，并分析了其在不同模型中的分布情况。随后，我们分析了幻觉产生的原因，并识别出四个可能导致幻觉的因素。最后，我们提出了一种基于RAG的缓解方法，该方法在所有研究的LLMs中均表现出一致的有效性。包含代码、数据和实验结果的复现包可在以下链接获取：https://github.com/DeepSoftwareAnalytics/LLMCodingHallucination。</td>
+<td>实际代码生成中的大型语言模型幻觉：现象、机制与缓解</td>
+<td>代码生成旨在根据输入需求自动生成代码，显著提升开发效率。近期的大型语言模型（LLMs）方法展示了令人鼓舞的结果，并彻底改变了代码生成任务。尽管性能令人鼓舞，但LLMs在生成内容时常常出现幻觉，尤其是在实际开发过程中需要处理复杂上下文依赖的代码生成场景中。虽然先前的研究已经分析了基于LLM的代码生成中的幻觉现象，但这些研究仅限于独立函数的生成。本文通过实证研究，探讨了在更实际和复杂的开发上下文中的仓库级生成场景下，LLM幻觉的现象、机制及其缓解方法。首先，我们手动检查了六个主流LLMs的代码生成结果，建立了LLM生成代码的幻觉分类。接着，我们详细阐述了幻觉现象，分析了其在不同模型中的分布。然后，我们分析了幻觉的原因，并确定了四个可能导致幻觉的因素。最后，我们提出了一种基于RAG的缓解方法，该方法在所有研究的LLMs中均表现出一致的有效性。包含代码、数据和实验结果的复制包可在https://github.com/DeepSoftwareAnalytics/LLMCodingHallucination获取。</td>
 <td>Ziyao Zhang</td>
 <td><a href="http://arxiv.org/pdf/2409.20550v1">PDF</a></td>
 <td>N/A</td>
@@ -385,8 +385,8 @@
 <td>Code generation aims to automatically generate code from input requirements, significantly enhancing development efficiency. Recent large language models (LLMs) based approaches have shown promising results and revolutionized code generation task. Despite the promising performance, LLMs often generate contents with hallucinations, especially for the code generation scenario requiring the handling of complex contextual dependencies in practical development process. Although previous study has analyzed hallucinations in LLM-powered code generation, the study is limited to standalone function generation. In this paper, we conduct an empirical study to study the phenomena, mechanism, and mitigation of LLM hallucinations within more practical and complex development contexts in repository-level generation scenario. First, we manually examine the code generation results from six mainstream LLMs to establish a hallucination taxonomy of LLM-generated code. Next, we elaborate on the phenomenon of hallucinations, analyze their distribution across different models. We then analyze causes of hallucinations and identify four potential factors contributing to hallucinations. Finally, we propose an RAG-based mitigation method, which demonstrates consistent effectiveness in all studied LLMs. The replication package including code, data, and experimental results is available at https://github.com/DeepSoftwareAnalytics/LLMCodingHallucination</td>
 </tr>
 <tr>
-<td>罗比·巴特勒：与家用机器人助手进行远程多模态互动</td>
-<td>本文介绍了Robi Butler，这是一种新颖的家庭机器人系统，能够与远程用户进行多模态互动。基于先进的通信接口，Robi Butler允许用户监控机器人的状态，发送文本或语音指令，并通过手势指向选择目标物体。我们系统的核心是一个由大型语言模型（LLMs）驱动的高级行为模块，它能够解读多模态指令以生成行动计划。这些计划由一组开放词汇的基础操作组成，这些操作由视觉语言模型（VLMs）支持，能够处理文本和指向查询。上述组件的整合使得Robi Butler能够以零样本方式将远程多模态指令与现实家庭环境相结合。我们通过涉及远程用户提供多模态指令的各种日常家庭任务，展示了该系统的有效性和效率。此外，我们还进行了一项用户研究，以分析多模态互动在远程人机互动中如何影响效率和用户体验，并讨论了潜在的改进措施。</td>
+<td>罗比·巴特勒：与家用机器人助手的远程多模态互动</td>
+<td>本文介绍了Robi Butler，这是一种新颖的家庭机器人系统，能够与远程用户进行多模态互动。基于先进的通信接口，Robi Butler允许用户监控机器人的状态，发送文本或语音指令，并通过手势指向选择目标物体。我们系统的核心是一个由大型语言模型（LLMs）驱动的高级行为模块，它能够解析多模态指令以生成行动计划。这些计划由一组开放词汇原语组成，这些原语由视觉语言模型（VLMs）支持，能够处理文本和指向查询。上述组件的整合使得Robi Butler能够以零样本的方式将远程多模态指令与现实家庭环境相结合。我们通过一系列涉及远程用户提供多模态指令的日常家庭任务，展示了该系统的有效性和效率。此外，我们还进行了一项用户研究，分析了多模态互动在远程人机互动中对效率和用户体验的影响，并讨论了潜在的改进措施。</td>
 <td>Anxing Xiao</td>
 <td><a href="http://arxiv.org/pdf/2409.20548v1">PDF</a></td>
 <td>N/A</td>
@@ -394,8 +394,8 @@
 <td>In this paper, we introduce Robi Butler, a novel household robotic system that enables multimodal interactions with remote users. Building on the advanced communication interfaces, Robi Butler allows users to monitor the robot's status, send text or voice instructions, and select target objects by hand pointing. At the core of our system is a high-level behavior module, powered by Large Language Models (LLMs), that interprets multimodal instructions to generate action plans. These plans are composed of a set of open vocabulary primitives supported by Vision Language Models (VLMs) that handle both text and pointing queries. The integration of the above components allows Robi Butler to ground remote multimodal instructions in the real-world home environment in a zero-shot manner. We demonstrate the effectiveness and efficiency of this system using a variety of daily household tasks that involve remote users giving multimodal instructions. Additionally, we conducted a user study to analyze how multimodal interactions affect efficiency and user experience during remote human-robot interaction and discuss the potential improvements.</td>
 </tr>
 <tr>
-<td>退火流生成模型：面向高维与多模态分布的采样</td>
-<td>从高维、多模态分布中采样仍然是统计贝叶斯推断和基于物理的机器学习等领域中的一个基本挑战。本文提出了一种名为“退火流”（Annealing Flow, AF）的方法，这是一种基于连续归一化流的采样技术，旨在从高维和多模态分布中进行采样。其核心思想是通过退火引导的连续归一化流运输映射，将样本从易于采样的分布逐步过渡到目标分布，从而在高维空间中有效地探索各个模式。与许多现有方法不同，AF的训练不依赖于目标分布的样本。AF确保了模式探索的有效性和平衡性，实现了样本数量和维度的线性复杂度，并避免了低效的混合时间。通过在各种具有挑战性的分布和真实世界数据集上的广泛实验，特别是在高维和多模态场景下，我们展示了AF相对于现有最先进方法的优越性能。此外，我们还强调了AF在采样最不利分布方面的潜力。</td>
+<td>退火流生成模型：面向高维和多模态分布的采样</td>
+<td>从高维、多模态分布中采样仍然是统计贝叶斯推断和基于物理的机器学习等领域中的一个根本性挑战。在本文中，我们提出了退火流（Annealing Flow, AF），这是一种基于连续归一化流的方法，旨在从高维和多模态分布中采样。其核心思想是学习一个由退火引导的连续归一化流运输映射，将样本从易于采样的分布过渡到目标分布，从而促进在高维空间中对模式的有效探索。与许多现有方法不同，AF的训练不依赖于目标分布的样本。AF确保了模式探索的有效性和平衡性，实现了样本大小和维度的线性复杂度，并避免了低效的混合时间。我们通过在各种具有挑战性的分布和真实世界数据集上的广泛实验，特别是在高维和多模态设置下，展示了AF相对于最先进方法的优越性能。我们还强调了AF在采样最不利分布方面的潜力。</td>
 <td>Dongze Wu</td>
 <td><a href="http://arxiv.org/pdf/2409.20547v1">PDF</a></td>
 <td>N/A</td>
@@ -403,8 +403,8 @@
 <td>Sampling from high-dimensional, multi-modal distributions remains a fundamental challenge across domains such as statistical Bayesian inference and physics-based machine learning. In this paper, we propose Annealing Flow (AF), a continuous normalizing flow-based approach designed to sample from high-dimensional and multi-modal distributions. The key idea is to learn a continuous normalizing flow-based transport map, guided by annealing, to transition samples from an easy-to-sample distribution to the target distribution, facilitating effective exploration of modes in high-dimensional spaces. Unlike many existing methods, AF training does not rely on samples from the target distribution. AF ensures effective and balanced mode exploration, achieves linear complexity in sample size and dimensions, and circumvents inefficient mixing times. We demonstrate the superior performance of AF compared to state-of-the-art methods through extensive experiments on various challenging distributions and real-world datasets, particularly in high-dimensional and multi-modal settings. We also highlight the potential of AF for sampling the least favorable distributions.</td>
 </tr>
 <tr>
-<td>扩展本体感觉-视觉学习与异构预训练变压器</td>
-<td>当前训练通用机器人模型的障碍之一是异质性。以往的机器人学习方法通常为单一任务收集数据以训练特定形态的机器人，这种方法成本高且容易过拟合。本研究探讨了通过在不同形态和任务的大规模机器人数据上进行异质性预训练来学习策略表示的问题。我们提出了异质性预训练变压器（HPT），它预训练了一个大型、可共享的策略神经网络主干，以学习与任务和形态无关的共享表示。这种通用架构将不同形态的具体本体感受和视觉输入对齐为一系列短标记，然后处理这些标记以映射到不同任务的机器人控制。利用最近的大规模多形态真实世界机器人数据集以及模拟、部署的机器人和人类视频数据集，我们研究了跨异质性的策略预训练。我们进行了实验，以研究训练目标的扩展行为，涉及多达52个数据集。HPT在多个模拟基准和真实世界环境中，在未见任务上的微调策略性能提升了超过20%，优于多个基线。有关代码和视频，请参见项目网站（https://liruiw.github.io/hpt/）。</td>
+<td>扩展本体感受-视觉学习与异构预训练变压器</td>
+<td>当前训练通用机器人模型的一个障碍是异质性。以往的机器人学习方法通常收集数据以针对特定任务的一个具体形态进行训练，这种方法成本高且容易过拟合。本研究探讨了通过在不同形态和任务的大规模机器人数据上进行异质性预训练来学习策略表示的问题。我们提出了异质性预训练变压器（HPT），它预训练一个大型、可共享的策略神经网络主干，以学习与任务和形态无关的共享表示。这种通用架构将来自不同形态的具体本体感受和视觉输入对齐为一系列短的标记，然后处理这些标记以映射到不同任务的机器人控制。利用最近的大规模多形态真实世界机器人数据集以及模拟、部署的机器人和人类视频数据集，我们研究了跨异质性的策略预训练。我们进行了实验，研究了训练目标的扩展行为，涉及多达52个数据集。HPT在多个模拟基准和真实世界环境中，在未见任务上优于多个基线，并将微调策略的性能提升了超过20%。有关代码和视频，请参见项目网站（https://liruiw.github.io/hpt/）。</td>
 <td>Lirui Wang</td>
 <td><a href="http://arxiv.org/pdf/2409.20537v1">PDF</a></td>
 <td>N/A</td>
